@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: cornsilk;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 14px;
+}
+:is(h1, h2, h3, h4, h5) {
+    @apply font-bold text-marine-blue;
+}
+p {
+    @apply text-cool-gray text-sm xs:text-base;
+}
+
+.stepper-style {
+    @apply w-8 h-8 border rounded-3xl flex-center cursor-pointer;
+}
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+.flex-between {
+    @apply flex justify-between;
+}
+.border-gray {
+    @apply border border-light-gray;
+}
+.border-blue {
+    @apply border-2 border-purplish-blue;
+}
+.border-error {
+    @apply border-red-700;
+}
+
+::placeholder {
+    @apply font-medium text-cool-gray;
+}
